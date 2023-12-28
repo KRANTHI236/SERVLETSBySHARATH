@@ -1,0 +1,43 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<context-param>
+		<param-name>SCHOOL</param-name>
+		<param-value>DPS</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>SIGNUP</servlet-name>
+		<servlet-class>CONTROLLER.SigningUp</servlet-class>
+
+		<init-param>
+			<param-name>fee</param-name>
+			<param-value>79550</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SIGNUP</servlet-name>
+		<url-pattern>/studentsignup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LOGINPAGE</servlet-name>
+		<servlet-class>CONTROLLER.Login</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LOGINPAGE</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+</web-app>
